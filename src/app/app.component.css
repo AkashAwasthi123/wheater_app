@@ -69,7 +69,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
+    flex-wrap: wrap;
 }
 
 .header{
@@ -83,6 +83,7 @@
     border-radius: 10px;
     border: 1px solid lightgray;
     height: 300px;
+    position: relative;
     width: 100%;
     max-width: 300px;
     background: #100e0e;
@@ -103,3 +104,20 @@
     from{margin-left:-40px}
     to{margin-left:20px}
 }
+
+
+@media screen and (max-width: 480px) {
+   .header{
+    display: block;
+    text-align: center;
+   }
+
+   .main_container{
+    justify-content: center !important;
+    margin: 0px auto;
+   }
+
+   .main_container button{
+    margin-left: 10px;
+   }
+  }

@@ -4,7 +4,7 @@ padding: 10px;">
     <p style="font-size: 40px;font-weight: 500;color: aqua;">Weather App</p>
   </div>
 
-  <div style="border-radius: 6px;border: none;padding: 6PX 10PX;width: 100%;max-width: 400px;
+  <div class="main_container" style="border-radius: 6px;border: none;padding: 6PX 10PX;width: 100%;max-width: 400px;
   color: black;display: flex;justify-content: space-between;align-items: center;" (keyup.enter)="call(search_data)">
     <input type="text" class="search11" name="search" placeholder="Search"
       style="border-radius: 6px;border: 1px solid darkgray;padding: 10px 13px;width: 100%;max-width: 300px;"
@@ -38,8 +38,8 @@ padding: 10px;">
         <i class="fa fa-moon-o fa-4x" style="color: white;filter: drop-shadow(1px 1px 10px white);"></i>
       </div>
 
-      <div *ngIf="!WeatherData.is_day" style="display: inline;position: absolute;    top: 270px;
-      left: 16%;">
+      <div *ngIf="!WeatherData.is_day" style="display: inline;position: absolute;top: 83px;
+      left: 50%;">
         <i class="fa fa-cloud fa-4x cloud" style="color: aqua;filter: drop-shadow(1px 1px 10px aqua);"></i>
       </div>
     </div>
@@ -64,7 +64,7 @@ padding: 10px;">
         <i class="fa fa-moon-o fa-4x" style="color: white;filter: drop-shadow(1px 1px 10px white);"></i>
       </div>
 
-      <div *ngIf="!WeatherData.is_day" style="display: inline;position: absolute;    top: 270px;
+      <div *ngIf="!WeatherData.is_day" style="display: inline;position: absolute;    top: 82px;
       left:50%;">
         <i class="fa fa-cloud fa-4x cloud" style="color: aqua;filter: drop-shadow(1px 1px 10px aqua);"></i>
       </div>
@@ -89,8 +89,8 @@ padding: 10px;">
         <i class="fa fa-moon-o fa-4x" style="color: white;filter: drop-shadow(1px 1px 10px white);"></i>
       </div>
 
-      <div *ngIf="!WeatherData.is_day" style="display: inline;position: absolute;    top: 270px;
-      left:83%;">
+      <div *ngIf="!WeatherData.is_day" style="display: inline;position: absolute;    top: 83px;
+      left:156px;">
         <i class="fa fa-cloud fa-4x cloud" style="color: aqua;filter: drop-shadow(1px 1px 10px aqua);"></i>
       </div>
     </div>
