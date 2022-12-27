@@ -1,7 +1,7 @@
 <header class="header" style="margin-top: 25px;
 padding: 10px;">
   <div>
-    <p style="font-size: 40px;font-weight: 500;color: aqua;">Weather App</p>
+    <p style="font-size: 40px; font-weight: 500;color: aqua;">Weather App</p>
   </div>
 
   <div class="main_container" style="border-radius: 6px;border: none;padding: 6PX 10PX;width: 100%;max-width: 400px;
@@ -19,7 +19,7 @@ padding: 10px;">
 </header>
 
 
-<div style="margin: 0px auto;width: fit-content;">
+<div style="margin: 0px auto;width: fit-content;" *ngIf="WeatherData && WeatherData.name">
   <p style="display: inline;font-size: 40px;font-weight: 600;">Weather for {{WeatherData.name}}</p>
 </div>
 
@@ -90,7 +90,7 @@ padding: 10px;">
       </div>
 
       <div *ngIf="!WeatherData.is_day" style="display: inline;position: absolute;    top: 83px;
-      left:156px;">
+      left:50%;">
         <i class="fa fa-cloud fa-4x cloud" style="color: aqua;filter: drop-shadow(1px 1px 10px aqua);"></i>
       </div>
     </div>
